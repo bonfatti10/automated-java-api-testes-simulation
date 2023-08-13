@@ -27,6 +27,6 @@ O padrão POJO (Plain Old Java Object) é uma abordagem de design em programaç�
 
 ### Execução
 
-Clonando o projeto e instalando as dependências necessárias, o projeto pode ser executado via terminal mvn test, neste framework não optei por usar cucumber e sim por usar displayname mas para adicionar o cucumber é bem simple.
+Clonando o projeto e instalando as dependências necessárias, o projeto pode ser executado via terminal mvn test, neste framework não optei por usar cucumber e sim por usar displayname mas para adicionar o cucumber é bem simples.
 
 developed by Bonfatti
