@@ -25,7 +25,7 @@ Resumidamente:
 O padrão POJO (Plain Old Java Object) é uma abordagem de design em programação Java que enfatiza a simplicidade e a clareza do código. O objetivo do padrão POJO é criar classes simples e independentes de estruturas complexas ou frameworks, facilitando a manutenção, reutilização e teste do código. Em essência, um POJO é uma classe Java com as seguintes características
 
 
-### Execuções
+### Execução
 
 Clonando o projeto e instalando as dependências necessárias, o projeto pode ser executado via terminal mvn test, neste framework não optei por usar cucumber e sim por usar displayname mas para adicionar o cucumber é bem simple.
 
