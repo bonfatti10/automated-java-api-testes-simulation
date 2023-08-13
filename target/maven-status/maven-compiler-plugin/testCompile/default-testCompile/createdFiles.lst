@@ -1,0 +1,10 @@
+br/com/carlosbonfatti/simulacoes/PostSimulacaoTest.class
+br/com/carlosbonfatti/simulacoes/GetRestricaoTest.class
+br/com/carlosbonfatti/suite/TestSuite.class
+br/com/carlosbonfatti/utils/DadosClientes.class
+br/com/carlosbonfatti/utils/BaseTest.class
+br/com/carlosbonfatti/simulacoes/DeleteSimulacaoTest.class
+br/com/carlosbonfatti/simulacoes/GetRestricaoCpfTest.class
+br/com/carlosbonfatti/utils/Constant.class
+br/com/carlosbonfatti/simulacoes/GetSimulacaosTest.class
+br/com/carlosbonfatti/simulacoes/PutSimulacoesCpfTest.class

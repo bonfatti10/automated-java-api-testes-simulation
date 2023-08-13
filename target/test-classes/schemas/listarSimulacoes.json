@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "array",
+  "default": [],
+  "title": "Root Schema",
+  "items": {
+    "type": "object",
+    "title": "A Schema",
+    "required": [
+      "id",
+      "nome",
+      "cpf",
+      "email",
+      "valor",
+      "parcelas",
+      "seguro"
+    ],
+    "properties": {
+      "id": {
+        "type": "integer",
+        "title": "The id Schema",
+        "examples": [
+          11,
+          12
+        ]
+      },
+      "nome": {
+        "type": "string",
+        "title": "The nome Schema",
+        "examples": [
+          "Fulano",
+          "Deltrano"
+        ]
+      },
+      "cpf": {
+        "type": "string",
+        "title": "The cpf Schema",
+        "examples": [
+          "66414919004",
+          "17822386034"
+        ]
+      },
+      "email": {
+        "type": "string",
+        "title": "The email Schema",
+        "examples": [
+          "fulano@gmail.com",
+          "deltrano@gmail.com"
+        ]
+      },
+      "valor": {
+        "type": "number",
+        "title": "The valor Schema",
+        "examples": [
+          11000.00,
+          20000.00
+        ]
+      },
+      "parcelas": {
+        "type": "integer",
+        "title": "The parcelas Schema",
+        "examples": [
+          3,
+          5
+        ]
+      },
+      "seguro": {
+        "type": "boolean",
+        "title": "The seguro Schema",
+        "examples": [
+          true,
+          false
+        ]
+      }
+    },
+    "examples": [{
+      "id": 11,
+      "nome": "Fulano",
+      "cpf": "66414919004",
+      "email": "fulano@gmail.com",
+      "valor": 11000.00,
+      "parcelas": 3,
+      "seguro": true
+    },
+      {
+        "id": 12,
+        "nome": "Deltrano",
+        "cpf": "17822386034",
+        "email": "deltrano@gmail.com",
+        "valor": 20000.00,
+        "parcelas": 5,
+        "seguro": false
+      }]
+  },
+  "examples": [
+    [{
+      "id": 11,
+      "nome": "Fulano",
+      "cpf": "66414919004",
+      "email": "fulano@gmail.com",
+      "valor": 11000.00,
+      "parcelas": 3,
+      "seguro": true
+    },
+      {
+        "id": 12,
+        "nome": "Deltrano",
+        "cpf": "17822386034",
+        "email": "deltrano@gmail.com",
+        "valor": 20000.00,
+        "parcelas": 5,
+        "seguro": false
+      }]
+  ]
+}
