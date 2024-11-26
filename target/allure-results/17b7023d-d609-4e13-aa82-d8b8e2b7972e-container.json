@@ -1,0 +1,1 @@
+{"uuid":"17b7023d-d609-4e13-aa82-d8b8e2b7972e","name":"Quado consultar uma simulação informando CPF invalido  Então deve retornar status 404 cpf nao encontrado","children":["e80d6511-1bde-4719-b5db-a69d4761d5c4"],"befores":[],"afters":[],"start":1732584393483,"stop":1732584393488}

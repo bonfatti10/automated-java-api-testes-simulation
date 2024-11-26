@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: br.com.carlosbonfatti.simulacoes.GetRestricaoCpfTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.236 sec
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.009 s <<< FAILURE! - in br.com.carlosbonfatti.simulacoes.GetRestricaoCpfTest
+br.com.carlosbonfatti.simulacoes.GetRestricaoCpfTest.consultaSimulacaoPorCpfInvalido  Time elapsed: 0.004 s  <<< ERROR!
+java.net.ConnectException: Connection refused
+	at br.com.carlosbonfatti.simulacoes.GetRestricaoCpfTest.consultaSimulacaoPorCpfInvalido(GetRestricaoCpfTest.java:30)
+
+br.com.carlosbonfatti.simulacoes.GetRestricaoCpfTest.consultaSimulacaoPorCpf  Time elapsed: 0.004 s  <<< ERROR!
+java.net.ConnectException: Connection refused
+	at br.com.carlosbonfatti.simulacoes.GetRestricaoCpfTest.consultaSimulacaoPorCpf(GetRestricaoCpfTest.java:19)
+

@@ -1,0 +1,1 @@
+{"uuid":"66584aa9-198c-4bef-b92a-c6fa69f5045e","name":"Quando inserir um novo CPF valido sem restrição Então deve criar uma nova simulação e o status 201 com body enviado","children":["f2089878-2471-4ae7-9f4e-eff2c4e66eb7"],"befores":[],"afters":[],"start":1732584393443,"stop":1732584393461}

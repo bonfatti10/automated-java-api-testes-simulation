@@ -1,7 +1,6 @@
 package br.com.carlosbonfatti.simulacoes;
 
-
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 import static br.com.carlosbonfatti.utils.Constant.*;
 import static io.restassured.RestAssured.given;
@@ -16,6 +15,7 @@ public class DeleteSimulacaoTest {
                 .when()
                 .delete(BASE_URL + "simulacoes/" + ID)
                 .then()
+                .log().all()
                 .statusCode(204);
     }
 
@@ -28,6 +28,7 @@ public class DeleteSimulacaoTest {
                 .delete(BASE_URL + "simulacoes/" + IDERROR)
                 .then()
                 .statusCode(404)
+                .log().all()
                 .body(containsString("Simulação não encontrada"));
     }
 }

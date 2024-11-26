@@ -1,0 +1,8 @@
+#surefire_0
+#Mon Nov 25 22:26:32 BRT 2024
+allure.link.issue.pattern=https\://example.org/browse/{}
+allure.link.tms.pattern=https\://example.org/browse/{}
+allure.results.directory=/Users/carlosbonfatti/Desktop/automated-java-api-testes2/target/allure-results
+basedir=/Users/carlosbonfatti/Desktop/automated-java-api-testes2
+localRepository=/Users/carlosbonfatti/.m2/repository
+user.dir=/Users/carlosbonfatti/Desktop/automated-java-api-testes2

@@ -1,0 +1,1 @@
+{"uuid":"856962b4-fda5-4f7f-8df8-79e5172d4c88","name":"Quando consultar CPF com restrição Então deve retornar status 200 O CPF possui restrição","children":["0313715f-b711-4e6f-9de1-97e1df5ec86a"],"befores":[],"afters":[],"start":1732584393493,"stop":1732584393498}

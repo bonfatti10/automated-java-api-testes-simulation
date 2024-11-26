@@ -2,7 +2,7 @@ package br.com.carlosbonfatti.simulacoes;
 
 import br.com.carlosbonfatti.utils.DadosClientes;
 import io.restassured.http.ContentType;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 import java.util.Map;
 import static br.com.carlosbonfatti.utils.Constant.BASE_URL;
@@ -24,6 +24,7 @@ public class PostSimulacaoTest {
                 .when()
                 .post(BASE_URL + "simulacoes")
                 .then()
+                .log().all()
                 .statusCode(201);
     }
 
@@ -38,6 +39,7 @@ public class PostSimulacaoTest {
                 .when()
                 .post(BASE_URL + "simulacoes")
                 .then()
+                .log().all()
                 .statusCode(409)
                 .body(containsString("CPF já existente"));
     }
@@ -53,6 +55,7 @@ public class PostSimulacaoTest {
                 .when()
                 .post(BASE_URL + "simulacoes")
                 .then()
+                .log().all()
                 .statusCode(400);
     }
 }

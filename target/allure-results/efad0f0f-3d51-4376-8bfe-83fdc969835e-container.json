@@ -1,0 +1,1 @@
+{"uuid":"efad0f0f-3d51-4376-8bfe-83fdc969835e","name":"Quando consultar CPF sem restrição Então deve retornar status 204 Não possui restrição","children":["32aecce2-8ef3-4770-9e77-6fa80bef2f3d"],"befores":[],"afters":[],"start":1732584393275,"stop":1732584393281}

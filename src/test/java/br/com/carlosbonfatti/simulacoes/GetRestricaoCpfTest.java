@@ -1,7 +1,7 @@
 package br.com.carlosbonfatti.simulacoes;
 
 import io.restassured.module.jsv.JsonSchemaValidator;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 
 import static br.com.carlosbonfatti.utils.Constant.BASE_URL;
@@ -18,6 +18,7 @@ public class GetRestricaoCpfTest {
                     .when()
                     .get(BASE_URL + "simulacoes/" + CPF)
                     .then()
+                    .log().all()
                     .statusCode(200)
                     .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/listarSimulacaoPorCpf.json"));
         }
@@ -29,6 +30,7 @@ public class GetRestricaoCpfTest {
                     .when()
                     .get(BASE_URL + "simulacoes/" + 2023)
                     .then()
+                    .log().all()
                     .statusCode(404)
                     .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/consultaSimulacaoCpfInvalido.json"));
         }

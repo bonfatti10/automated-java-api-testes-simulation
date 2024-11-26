@@ -9,8 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <rest-assured.version>5.2.0</rest-assured.version>
         <json-schema-validator.version>4.3.0</json-schema-validator.version>
@@ -19,7 +19,16 @@
         <junit-jupiter-api.version>5.9.2</junit-jupiter-api.version>
         <junit-jupiter-engine.version>5.9.1</junit-jupiter-engine.version>
         <datafaker.version>1.9.0</datafaker.version>
+        <allure.version>2.23.0</allure.version>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>allure</id>
+            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>io.rest-assured</groupId>
@@ -61,5 +70,88 @@
             <artifactId>datafaker</artifactId>
             <version>${datafaker.version}</version>
         </dependency>
+        <!-- Allure JUnit 5 Adapter -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit5</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Maven Compiler Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+
+            <!-- Surefire Plugin for JUnit 5 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <configuration>
+                    <includes>
+                        <include>**Test**.java</include>
+                        <include>**/*Tests.java</include>
+                        <include>**Should.java</include>
+                    </includes>
+                    <systemPropertyVariables>
+                        <!-- Diretório para salvar os resultados do Allure -->
+                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+                        <allure.link.issue.pattern>https://example.org/browse/{}</allure.link.issue.pattern>
+                        <allure.link.tms.pattern>https://example.org/browse/{}</allure.link.tms.pattern>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+
+            <!-- Allure Maven Plugin -->
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>report</goal>
+                            <goal>serve</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    <!-- Licença do projeto -->
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Carlos Bonfatti</name>
+        <url>https://www.linkedin.com/in/carlosbonfatti</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>carlosbonfatti</id>
+            <name>Carlos Bonfatti</name>
+            <email>carlos@test</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>America/Sao_Paulo</timezone>
+        </developer>
+    </developers>
 </project>
+

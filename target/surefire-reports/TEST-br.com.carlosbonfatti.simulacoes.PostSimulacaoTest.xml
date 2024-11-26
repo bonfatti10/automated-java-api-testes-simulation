@@ -1,131 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="1" name="br.com.carlosbonfatti.simulacoes.PostSimulacaoTest" time="0.464" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="br.com.carlosbonfatti.simulacoes.PostSimulacaoTest" time="0.183" tests="3" errors="3" skipped="0" failures="0">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="java.vm.version" value="11.0.16+11-LTS-199"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.16.jdk/Contents/Home/lib"/>
-    <property name="gopherProxySet" value="false"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/carlosbonfatti/Documents/carlosBonfatti/desafio_sicredi"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="path.separator" value=":"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="sun.os.patch.level" value="unknown"/>
-    <property name="user.country" value="BR"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/carlosbonfatti/Documents/carlosBonfatti/desafio_sicredi"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="java.runtime.version" value="11.0.16+11-LTS-199"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/10/hx3yzwcd3sx65qxw385r4h9w0000gn/T/"/>
-    <property name="line.separator" value="
-"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.8.7/libexec/bin/m2.conf"/>
+    <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/carlosbonfatti/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="maven.conf" value="/usr/local/Cellar/maven/3.8.7/libexec/conf"/>
-    <property name="jdk.debug" value="release"/>
-    <property name="java.class.version" value="55.0"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="13.3.1"/>
-    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.8.7/libexec/lib/jansi-native"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="user.home" value="/Users/carlosbonfatti"/>
-    <property name="user.timezone" value="America/Sao_Paulo"/>
-    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="java.specification.version" value="11"/>
-    <property name="user.name" value="carlosbonfatti"/>
-    <property name="java.class.path" value="/usr/local/Cellar/maven/3.8.7/libexec/boot/plexus-classworlds-2.6.0.jar"/>
-    <property name="java.vm.specification.version" value="11"/>
+    <property name="java.class.path" value="/Users/carlosbonfatti/Desktop/automated-java-api-testes2/target/test-classes:/Users/carlosbonfatti/Desktop/automated-java-api-testes2/target/classes:/Users/carlosbonfatti/.m2/repository/io/rest-assured/rest-assured/5.2.0/rest-assured-5.2.0.jar:/Users/carlosbonfatti/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/Users/carlosbonfatti/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/Users/carlosbonfatti/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/carlosbonfatti/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/carlosbonfatti/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/carlosbonfatti/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/carlosbonfatti/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/carlosbonfatti/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/carlosbonfatti/.m2/repository/io/rest-assured/json-path/5.2.0/json-path-5.2.0.jar:/Users/carlosbonfatti/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/Users/carlosbonfatti/.m2/repository/io/rest-assured/rest-assured-common/5.2.0/rest-assured-common-5.2.0.jar:/Users/carlosbonfatti/.m2/repository/io/rest-assured/xml-path/5.2.0/xml-path-5.2.0.jar:/Users/carlosbonfatti/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/carlosbonfatti/.m2/repository/io/rest-assured/json-schema-validator/4.3.0/json-schema-validator-4.3.0.jar:/Users/carlosbonfatti/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.10/json-schema-validator-2.2.10.jar:/Users/carlosbonfatti/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.10/json-schema-core-1.2.10.jar:/Users/carlosbonfatti/.m2/repository/com/github/java-json-tools/jackson-coreutils/1.9/jackson-coreutils-1.9.jar:/Users/carlosbonfatti/.m2/repository/com/google/guava/guava/16.0.1/guava-16.0.1.jar:/Users/carlosbonfatti/.m2/repository/com/github/fge/msg-simple/1.1/msg-simple-1.1.jar:/Users/carlosbonfatti/.m2/repository/com/github/fge/btf/1.2/btf-1.2.jar:/Users/carlosbonfatti/.m2/repository/com/github/fge/uri-template/0.9/uri-template-0.9.jar:/Users/carlosbonfatti/.m2/repository/org/mozilla/rhino/1.7.7.1/rhino-1.7.7.1.jar:/Users/carlosbonfatti/.m2/repository/javax/mail/mailapi/1.4.3/mailapi-1.4.3.jar:/Users/carlosbonfatti/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/carlosbonfatti/.m2/repository/joda-time/joda-time/2.9.7/joda-time-2.9.7.jar:/Users/carlosbonfatti/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.0.0/libphonenumber-8.0.0.jar:/Users/carlosbonfatti/.m2/repository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar:/Users/carlosbonfatti/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar:/Users/carlosbonfatti/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/Users/carlosbonfatti/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/Users/carlosbonfatti/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/Users/carlosbonfatti/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/carlosbonfatti/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/carlosbonfatti/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/carlosbonfatti/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/carlosbonfatti/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/carlosbonfatti/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/Users/carlosbonfatti/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:/Users/carlosbonfatti/.m2/repository/net/datafaker/datafaker/1.9.0/datafaker-1.9.0.jar:/Users/carlosbonfatti/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar:/Users/carlosbonfatti/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/carlosbonfatti/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/carlosbonfatti/.m2/repository/io/qameta/allure/allure-junit5/2.23.0/allure-junit5-2.23.0.jar:/Users/carlosbonfatti/.m2/repository/io/qameta/allure/allure-junit-platform/2.23.0/allure-junit-platform-2.23.0.jar:/Users/carlosbonfatti/.m2/repository/io/qameta/allure/allure-java-commons/2.23.0/allure-java-commons-2.23.0.jar:/Users/carlosbonfatti/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/carlosbonfatti/.m2/repository/io/qameta/allure/allure-model/2.23.0/allure-model-2.23.0.jar:/Users/carlosbonfatti/.m2/repository/io/qameta/allure/allure-test-filter/2.23.0/allure-test-filter-2.23.0.jar:/Users/carlosbonfatti/.m2/repository/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.16.jdk/Contents/Home"/>
-    <property name="user.language" value="pt"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="11.0.16"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/usr/local/Cellar/maven/3.8.7/libexec"/>
-    <property name="file.separator" value="/"/>
-    <property name="java.version.date" value="2022-07-19"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="allure.link.issue.pattern" value="https://example.org/browse/{}"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/carlosbonfatti/Desktop/automated-java-api-testes2/target/surefire/surefirebooter12744604885810115079.jar /Users/carlosbonfatti/Desktop/automated-java-api-testes2/target/surefire 2024-11-25T22-26-32_320-jvmRun1 surefire10226476021378382166tmp surefire_07868096528855026474tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/carlosbonfatti/Desktop/automated-java-api-testes2/target/test-classes:/Users/carlosbonfatti/Desktop/automated-java-api-testes2/target/classes:/Users/carlosbonfatti/.m2/repository/io/rest-assured/rest-assured/5.2.0/rest-assured-5.2.0.jar:/Users/carlosbonfatti/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/Users/carlosbonfatti/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/Users/carlosbonfatti/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/carlosbonfatti/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/carlosbonfatti/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/carlosbonfatti/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/carlosbonfatti/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/carlosbonfatti/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/carlosbonfatti/.m2/repository/io/rest-assured/json-path/5.2.0/json-path-5.2.0.jar:/Users/carlosbonfatti/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/Users/carlosbonfatti/.m2/repository/io/rest-assured/rest-assured-common/5.2.0/rest-assured-common-5.2.0.jar:/Users/carlosbonfatti/.m2/repository/io/rest-assured/xml-path/5.2.0/xml-path-5.2.0.jar:/Users/carlosbonfatti/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/carlosbonfatti/.m2/repository/io/rest-assured/json-schema-validator/4.3.0/json-schema-validator-4.3.0.jar:/Users/carlosbonfatti/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.10/json-schema-validator-2.2.10.jar:/Users/carlosbonfatti/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.10/json-schema-core-1.2.10.jar:/Users/carlosbonfatti/.m2/repository/com/github/java-json-tools/jackson-coreutils/1.9/jackson-coreutils-1.9.jar:/Users/carlosbonfatti/.m2/repository/com/google/guava/guava/16.0.1/guava-16.0.1.jar:/Users/carlosbonfatti/.m2/repository/com/github/fge/msg-simple/1.1/msg-simple-1.1.jar:/Users/carlosbonfatti/.m2/repository/com/github/fge/btf/1.2/btf-1.2.jar:/Users/carlosbonfatti/.m2/repository/com/github/fge/uri-template/0.9/uri-template-0.9.jar:/Users/carlosbonfatti/.m2/repository/org/mozilla/rhino/1.7.7.1/rhino-1.7.7.1.jar:/Users/carlosbonfatti/.m2/repository/javax/mail/mailapi/1.4.3/mailapi-1.4.3.jar:/Users/carlosbonfatti/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/carlosbonfatti/.m2/repository/joda-time/joda-time/2.9.7/joda-time-2.9.7.jar:/Users/carlosbonfatti/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.0.0/libphonenumber-8.0.0.jar:/Users/carlosbonfatti/.m2/repository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar:/Users/carlosbonfatti/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar:/Users/carlosbonfatti/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/Users/carlosbonfatti/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/Users/carlosbonfatti/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/Users/carlosbonfatti/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/carlosbonfatti/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/carlosbonfatti/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/carlosbonfatti/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/carlosbonfatti/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/carlosbonfatti/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/Users/carlosbonfatti/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:/Users/carlosbonfatti/.m2/repository/net/datafaker/datafaker/1.9.0/datafaker-1.9.0.jar:/Users/carlosbonfatti/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar:/Users/carlosbonfatti/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/carlosbonfatti/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/carlosbonfatti/.m2/repository/io/qameta/allure/allure-junit5/2.23.0/allure-junit5-2.23.0.jar:/Users/carlosbonfatti/.m2/repository/io/qameta/allure/allure-junit-platform/2.23.0/allure-junit-platform-2.23.0.jar:/Users/carlosbonfatti/.m2/repository/io/qameta/allure/allure-java-commons/2.23.0/allure-java-commons-2.23.0.jar:/Users/carlosbonfatti/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/carlosbonfatti/.m2/repository/io/qameta/allure/allure-model/2.23.0/allure-model-2.23.0.jar:/Users/carlosbonfatti/.m2/repository/io/qameta/allure/allure-test-filter/2.23.0/allure-test-filter-2.23.0.jar:/Users/carlosbonfatti/.m2/repository/org/junit/platform/junit-platform-launcher/1.9.2/junit-platform-launcher-1.9.2.jar:"/>
+    <property name="allure.results.directory" value="/Users/carlosbonfatti/Desktop/automated-java-api-testes2/target/allure-results"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="java.vendor.version" value="18.9"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/carlosbonfatti"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="allure.link.tms.pattern" value="https://example.org/browse/{}"/>
+    <property name="basedir" value="/Users/carlosbonfatti/Desktop/automated-java-api-testes2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/carlosbonfatti/Desktop/automated-java-api-testes2/target/surefire/surefirebooter12744604885810115079.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="java.runtime.version" value="21.0.3+7-LTS-152"/>
+    <property name="user.name" value="carlosbonfatti"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.1.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/carlosbonfatti/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/8k/p_0sbqqs1717tkpf730m4nrr0000gn/T/"/>
+    <property name="java.version" value="21.0.3"/>
+    <property name="user.dir" value="/Users/carlosbonfatti/Desktop/automated-java-api-testes2"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/carlosbonfatti/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.3+7-LTS-152"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase classname="br.com.carlosbonfatti.simulacoes.PostSimulacaoTest" name="simulacaoError" time="0.362"/>
-  <testcase classname="br.com.carlosbonfatti.simulacoes.PostSimulacaoTest" name="simulacaoComSucesso" time="0.056"/>
-  <testcase classname="br.com.carlosbonfatti.simulacoes.PostSimulacaoTest" name="cpfDuplicado" time="0.046">
-    <failure message="1 expectation failed.
-Expected status code &lt;409&gt; but was &lt;400&gt;.
-" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;409&gt; but was &lt;400&gt;.
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at br.com.carlosbonfatti.simulacoes.PostSimulacaoTest.cpfDuplicado(PostSimulacaoTest.java:41)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</failure>
+  <testcase name="simulacaoError" classname="br.com.carlosbonfatti.simulacoes.PostSimulacaoTest" time="0.136">
+    <error type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
+	at br.com.carlosbonfatti.simulacoes.PostSimulacaoTest.simulacaoError(PostSimulacaoTest.java:54)
+]]></error>
+  </testcase>
+  <testcase name="simulacaoComSucesso" classname="br.com.carlosbonfatti.simulacoes.PostSimulacaoTest" time="0.018">
+    <error type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
+	at br.com.carlosbonfatti.simulacoes.PostSimulacaoTest.simulacaoComSucesso(PostSimulacaoTest.java:25)
+]]></error>
+  </testcase>
+  <testcase name="cpfDuplicado" classname="br.com.carlosbonfatti.simulacoes.PostSimulacaoTest" time="0.016">
+    <error type="java.net.ConnectException"><![CDATA[java.net.ConnectException: Connection refused
+	at br.com.carlosbonfatti.simulacoes.PostSimulacaoTest.cpfDuplicado(PostSimulacaoTest.java:39)
+]]></error>
   </testcase>
 </testsuite>

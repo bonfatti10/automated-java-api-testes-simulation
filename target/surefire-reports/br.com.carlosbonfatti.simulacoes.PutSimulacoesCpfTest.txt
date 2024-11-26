@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: br.com.carlosbonfatti.simulacoes.PutSimulacoesCpfTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.038 s <<< FAILURE! - in br.com.carlosbonfatti.simulacoes.PutSimulacoesCpfTest
+br.com.carlosbonfatti.simulacoes.PutSimulacoesCpfTest.atualizaSimulacaoCpfNaoCadastrado  Time elapsed: 0.022 s  <<< ERROR!
+java.net.ConnectException: Connection refused
+	at br.com.carlosbonfatti.simulacoes.PutSimulacoesCpfTest.atualizaSimulacaoCpfNaoCadastrado(PutSimulacoesCpfTest.java:46)
+
+br.com.carlosbonfatti.simulacoes.PutSimulacoesCpfTest.atualizaSimulacaoPorCpf  Time elapsed: 0.014 s  <<< ERROR!
+java.net.ConnectException: Connection refused
+	at br.com.carlosbonfatti.simulacoes.PutSimulacoesCpfTest.atualizaSimulacaoPorCpf(PutSimulacoesCpfTest.java:30)
+

@@ -1,0 +1,1 @@
+{"uuid":"f5bef349-2ecf-418d-a102-342658c12097","name":"Quando consultar uma simulação informando CPF Então deve retornar response body com a simulaçãos solicitada status 200 simulação encontrada","children":["d9579f26-3b73-4253-ae9f-d7b15a2a184a"],"befores":[],"afters":[],"start":1732584393488,"stop":1732584393492}
